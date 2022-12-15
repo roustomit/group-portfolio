@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #ebf1f1;
+
+}
+.nav-manu{
+    background-color: rgb(49, 52, 59);
+    display: flex;
+    justify-content: flex-end;
+            }
+    .nav-manu a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+     }
+     .nav-manu a:hover{
+        background-color: rgb(243, 152, 33);
+     }
+     /* <!--mobile responsive--> */
+
+      @media screen and (max-width:600px) {
+        header{
+            display: inline;
+          flex-direction: column;
+        }
+        .nav-manu{
+            flex-direction: column;
+            padding: 10px;
+        }
+        .nav-manu a{
+            background-color: indigo;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 12px;
+        }
+      }
+.write{
+    width: 250px;
+margin-top: 15px;
+text-align: left;
+justify-content: left;
+background-color: rgb(49, 52, 59);
+color: #f1da04;
+}
+.group{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-left: 0 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #bfc0c2;
+}
+@media screen and (max-width:600px) {
+    .group{
+        display: inline;
+      flex-direction: column;
+     
+    }
+    .group img{
+       margin-left: 200px;
+    }
+  }
+.container{
+    width: 100%;
+    background-color: #bfc0c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    font-size: 32px;
+    font-weight: 500;
+    padding: 20px;
+    margin: 30px;
+    width: 350px;
+    background: #ebf1ef;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: #00a037;
+    box-shadow: inset 10px 10px 10px -1px rgba(203, 211, 218, 0.16), 
+    inset -10px -10px 10px -1px rgb(255, 255, 255, 0.70);
+
+}
+button.Reject{
+    color: #ed0000;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16), 
+    inset -10px -10px 10px -1px rgb(255, 255, 255, 0.70);
+}
+button i{
+    margin-right: 20px;
+}
+@media screen and (max-width:600px) {
+    .container{
+        display: inline;
+      flex-direction: column;
+     
+    }
+    .container button{
+      align-items: center;
+
+    }
+  }
+
+.sk-ar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about{
+    width: 49%;
+    background-color: rgb(198, 202, 202);
+ margin-left: 10px;
+}
+
+.sk-joni{
+    display: flex;
+}
+.sk-information{
+    margin-top: 50px;
+    margin-left: 30px;
+ 
+}
+@media screen and (max-width:600px) {
+    .sk-ar{
+        display: inline;
+      flex-direction: column;
+     
+    }
+    .about{
+        display: inline;
+      flex-direction: column;
+     
+    }  
+  }
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(92, 95, 94);
+    
+}
+.footer-logo img{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 10%;
+    
+
+}
+.footer-bar{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 50px;
+   
+
+}
+.footer-bar ul li {
+    list-style: none;
+   display: inline-block;
+   width: 130px;
+ 
+
+}
+.footer-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+   
+    font-style: oblique;
+
+}
+@media screen and (max-width:600px) {
+    .footer{
+        display: inline;
+      flex-direction: column;
+    }
+    .footer-icon::after{
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(243, 152, 33);
+
+    }
+  }
